@@ -1,4 +1,4 @@
-# b-Kurulum bilgilendirme
+# a-Kurulum bilgilendirme
 
 Bu örnek projede keycloak kullanmadan authentication ve authorization nasıl yapılır onu görmüş olacağız. 
 
