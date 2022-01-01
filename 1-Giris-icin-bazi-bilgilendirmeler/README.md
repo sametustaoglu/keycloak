@@ -4,7 +4,11 @@
 
 **Authentication**, güvenliği olan bir yere girişte kimlik, yüz tanıma, parmak izi gibi kendinizi tanıtıcı uygulamalar diyebiliriz. Yani sisteme giriş yetkinizdir. Yetkisiz girişi önleme amaçlıdır.
 
+authentication  >> kimlik doğrulama >> o kişi dediği kişi mi >> şifre ve password ile gerçekleşiyor.
+
 **Authorization**, sisteme giriş yaptıktan sonra her kişi veya uygulama tüm kaynaklara erişemez. Bunun için de herkes kendisine atanan rolun yetkisi kadar hakka sahiptir. Kişi veya uygulamaların yetkilerini sınırlama amaçlıdır.
+
+authorization    >> yetki >> sizin neye nasıl erişebileceğinizi gösterir. bunun için de önce bir authentication olması gerekiyor.
 
 Şöyle özetleyebiliriz sisteme ilk giriş için Authentication, daha sonra içerideki kaynaklara erişim için de Authorization diyebiliriz.
 
@@ -71,3 +75,19 @@ Kullanıcıların merkezi yönetimi yapılabilir.
 ![Untitled](1-Giris-icin-bazi-bilgilendirmeler%208e5f4d576b28493d90441665fac2d841/Untitled%206.png)
 
 Yukarıdaki resim, SSO çözümü örneğidir. Kullanıcı uygulamaya erişmek istediğinde uygulama tarafında keycloak server’ına yönlendirilir.
+
+---
+
+client registration >> google , facebook, ve kendinizi tanıtma
+
+![Untitled](1-Giris-icin-bazi-bilgilendirmeler%208e5f4d576b28493d90441665fac2d841/Untitled%207.png)
+
+**Lightweight Directory Access Protocol** veya kısaca **LDAP** : [TCP/IP](https://tr.wikipedia.org/wiki/TCP/IP) üzerinde çalışan indeks servislerini sorgulama ve değiştirme amacıyla kullanılan uygulama katmanı protokolü.
+
+**Kerberos** windows 2000 server ve sonrası için default kimlik doğrulama yöntemidir. client ve server arasında güvenli bir iletişimin kurulmasını sağlayan kdc (key distribution center) dan yardım alır.
+
+Şu üç ayak tamamlar;
+
+- kimliğini doğrulatmak ya da bir servisten faydalanmak isteyen client,
+- client’ in talep ettiği servisi sağlayan server,
+- hem client hem de server tarafından güvenilen bir dc (aynı zamanda kdc)
